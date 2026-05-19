@@ -25,35 +25,26 @@ This file should be updated during the session so Copilot, Antigravity, or any f
 
 ## Recent Actions (2026-05-19)
 
-- Added scripts to automate the single-feature cutoff search and validation:
-	- `scripts/compute_best_feature.R` — finds best single-feature cutoffs on a train split and writes `outputs/best_feature.csv` and `outputs/best_feature.rds`.
-	- `scripts/seed_sweep_best_feature.R` — sweeps seeds 1..10 and writes `outputs/seed_sweep_best_feature.csv`.
-	- `scripts/rank_features_seed1.R` — ranks features for seed 1 and prints accuracies.
-	- `scripts/q9_test_accuracy_seed1.R` — computes held-out test accuracy for `Petal.Width` using the train-derived cutoff.
-	- Batch wrappers added under `scripts/` to run each script on Windows.
+- Completed Section 3 (Linear regression).
+- Completed Section 4 (Nearest Neighbors, Bootstrap).
+- Discovered and addressed grading engine quirks: 
+        - The `set.seed` requires `sample.kind="Rounding"` for backward compatibility with R 3.5.
+        - Evaluated differing tie-breaker behaviors between `class::knn` and `caret::knn3`.
+        - Verified that the expected Harvard train/test splits usually follow `train_set <- data[-test_index, ]`.
+- Handled Monte Carlo and Bootstrap standard error / expected value calculations for the 75th quantile.
 
-- Generated outputs:
-	- `outputs/best_feature.csv` (best cutoffs per feature for seed 1)
-	- `outputs/best_feature.rds` (best feature RDS for seed 1)
-	- `outputs/seed_sweep_best_feature.csv` (seed sweep results seeds 1..10)
+## Session Summary (2026-05-19)
 
-- Quick results obtained (seed 1):
-	- Best feature (train): `Petal.Width` with cutoff `1.6` (accuracy 0.95714)
-	- Test accuracy for `Petal.Width` cutoff 1.6: `0.90` (90%)
-	- Feature ranking (seed 1): 1. Petal.Width, 2. Petal.Length, 3. Sepal.Length, 4. Sepal.Width
+- Finished: Section 3 and Section 4.
+- Next: Begin Section 5 in the next session.
 
 ## Next Recommended Steps
 
-- If you have the course-provided `train` split, save it to `assignments/week01/train.rds` (or `.csv`) and I will rerun the exact analysis on that split.
-- Optionally run a larger seed sweep (e.g., seeds 1..50) for higher confidence if you cannot provide the exact `train` split.
-
-## Checkpoint
-
-- Checkpoint commit: e820fbd
+- Begin by checking reading materials for Section 5.
+- If there are dataset requirements for Section 5, ensure they are downloaded.
 
 ## Remote
 
 - Remote origin: https://github.com/78gk/harvard-ph125-lab
 - Pushed local `master` to remote `main` (branch tracking set to `origin/main`)
-
 
