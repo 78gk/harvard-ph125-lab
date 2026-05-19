@@ -10,7 +10,7 @@ Your Harvard PH125 autonomous data-science lab is ready!
 - ✓ Quarto 1.9.37 (for reports)
 - ✓ renv initialized with 140+ R packages
 - ✓ VS Code configured for R/Quarto
-- ✓ Agent setup guides (Roo/Cline/Ollama/OpenRouter)
+- ✓ Agent setup guides (Copilot-first, Antigravity fallback, plus Ollama/OpenRouter notes)
 
 ## Quick Start
 
@@ -38,7 +38,9 @@ Put the assignment PDF or instructions in `assignments/week03/`.
 
 ### 4. Ask an Agent
 
-Open **Roo Code** or **Cline** in VS Code and paste a prompt from `prompts/`.
+Open **GitHub Copilot** in VS Code and paste a prompt from `prompts/copilot-starter.md`.
+
+If Copilot hits a rate limit, open the same folder in Antigravity and continue from `context.md` and `SESSION_STATE.md`.
 
 Example:
 ```
@@ -76,12 +78,13 @@ git commit -m "Week 3 assignment: complete analysis"
 ## Next Steps
 
 1. **Install an AI Agent:**
-   - Roo Code (recommended, easiest): VS Code Extensions → Roo Code
-   - Cline (advanced control): VS Code Extensions → Cline
+   - GitHub Copilot: VS Code Extensions → GitHub Copilot
+   - Antigravity: use as the fallback IDE if Copilot rate limits are hit
 
 2. **Choose a Model Source:**
-   - **Local (free):** Install Ollama and pull `qwen2.5-coder`
-   - **Cloud (powerful):** Create OpenRouter account, add API key
+   - **Primary:** Copilot built into VS Code
+   - **Fallback:** Antigravity model access if Copilot rate limits are hit
+   - **Optional local/cloud extras:** Ollama or OpenRouter if you want them later
 
 3. **Add Your First Assignment:**
    - Copy assignment PDF to `assignments/week01/`
@@ -96,11 +99,9 @@ git commit -m "Week 3 assignment: complete analysis"
 ## Agent Decision Tree
 
 ```
-Quick edit / cleanup?
-├─ Yes → Use Ollama (local, fast)
-└─ No → Complex reasoning?
-    ├─ Yes → Claude 3.5 via OpenRouter
-    └─ No → DeepSeek Coder via OpenRouter (cheaper)
+Copilot available?
+├─ Yes → Use Copilot in VS Code
+└─ No or rate-limited → Open the same folder in Antigravity
 ```
 
 ## PowerShell Alias (Optional)

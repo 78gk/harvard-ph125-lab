@@ -1,6 +1,14 @@
 # Agent setup guides
 
-This file contains setup notes and links for common agent/tool stacks used with this project.
+This file contains setup notes and links for the Copilot-first workflow and fallback tool stacks used with this project.
+
+Copilot
+- Use GitHub Copilot in VS Code as the primary workflow.
+- Read `AGENTS.md`, `context.md`, `roadmap.md`, and `SESSION_STATE.md` before making changes.
+
+Antigravity
+- Use Antigravity only as a fallback if Copilot hits a rate limit.
+- Open the same repo folder and continue from the same context files.
 
 Roo Code
 - Install from VS Code marketplace or follow Roo Code docs.
@@ -22,4 +30,4 @@ OpenRouter (cloud API)
 
 Safety notes
 - Always review agent prompts in `prompts/` before executing with an autonomous agent.
-- Agents must append run metadata to `memory/` after each execution.
+- Agents must append run metadata to `memory/` after each execution and update `SESSION_STATE.md` when the project state changes.

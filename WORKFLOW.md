@@ -1,6 +1,16 @@
 # Assignment Workflow
 
-This guide helps you solve Harvard PH125 assignments quickly using autonomous agents.
+This guide helps you solve Harvard PH125 assignments quickly using Copilot first, with Antigravity as a fallback.
+
+## Shared Context
+
+Always read these files first so the same context follows you across IDEs and models:
+
+- `AGENTS.md`
+- `context.md`
+- `roadmap.md`
+- `SESSION_STATE.md`
+- The current assignment folder under `assignments/`
 
 ## 1. Prepare Assignment
 
@@ -23,9 +33,11 @@ Example README.md:
 
 ## 2. Ask Your Agent (Copy-Paste One of These)
 
-### For Roo Code:
+### For GitHub Copilot:
 ```
 I have a Harvard PH125 assignment (see assignments/week01/README.md).
+
+Read AGENTS.md, context.md, roadmap.md, and SESSION_STATE.md first.
 
 Please:
 1. Load and explore the data
@@ -38,9 +50,11 @@ Please:
 Follow AGENTS.md rules. Use tidyverse.
 ```
 
-### For Cline:
+### For Antigravity fallback:
 ```
 Implement the full assignment from assignments/week01/README.md:
+
+Read AGENTS.md, context.md, roadmap.md, and SESSION_STATE.md first.
 
 1. Create assignments/week01/solution.qmd
 2. Load data, perform EDA

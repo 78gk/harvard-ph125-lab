@@ -5,8 +5,8 @@
     "**/renv/library": true
   },
   "editor.formatOnSave": true,
-  "r.rterm.windows": "C:\\Program Files\\R\\R-4.2.2\\bin\\R.exe",
-  "r.lsp.path": "C:\\Program Files\\R\\R-4.2.2\\bin\\R.exe",
+  "r.rterm.windows": "C:\\Program Files\\R\\R-4.6.0\\bin\\R.exe",
+  "r.lsp.path": "C:\\Program Files\\R\\R-4.6.0\\bin\\R.exe",
   "quarto.enable": true
   ,
   "terminal.integrated.profiles.windows": {
