@@ -7,8 +7,12 @@ param(
 )
 
 Write-Host "Full bootstrap: creating folders (same as lightweight bootstrap)"
-.
-\scripts\bootstrap.ps1
+# Invoke the lightweight bootstrap located in the same scripts folder
+if (Test-Path "$PSScriptRoot\bootstrap.ps1") {
+  & "$PSScriptRoot\bootstrap.ps1"
+} else {
+  Write-Host "Lightweight bootstrap not found at $PSScriptRoot\bootstrap.ps1"
+}
 
 if ($InstallTools) {
   Write-Host "Installing recommended tools via Chocolatey (requires admin)."
