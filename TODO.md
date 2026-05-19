@@ -1,0 +1,5 @@
+- Initialize repo scaffold and files
+- Review and edit `AGENTS.md` to your preferences
+- Run `scripts/bootstrap.ps1` to install local prerequisites
+- Initialize `renv` from R and install essential packages
+- Add first assignment into `assignments/week01/`

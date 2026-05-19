@@ -1,0 +1,7 @@
+Generate report
+
+Instructions for agent:
+
+- Use Quarto `.qmd` with embedded R chunks.
+- Create figures saved to `outputs/figures/` and tables to `outputs/data/`.
+- Include reproducibility notes and `renv` snapshot instructions.

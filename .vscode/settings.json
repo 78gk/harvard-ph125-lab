@@ -1,0 +1,11 @@
+{
+  "files.exclude": {
+    "**/.Rhistory": true,
+    "**/.RData": true,
+    "**/renv/library": true
+  },
+  "editor.formatOnSave": true,
+  "r.rterm.windows": "C:\\Program Files\\R\\R-4.2.2\\bin\\R.exe",
+  "r.lsp.path": "C:\\Program Files\\R\\R-4.2.2\\bin\\R.exe",
+  "quarto.enable": true
+}

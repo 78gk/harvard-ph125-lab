@@ -1,0 +1,7 @@
+# Human-readable list of recommended tools (not pip/CRAN manifest)
+R >= 4.2
+Rtools (Windows)
+Quarto
+Git
+Ollama (optional: for local models)
+Docker (optional)

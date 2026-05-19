@@ -1,0 +1,10 @@
+Analyze assignment
+
+Instructions for agent:
+
+- Summarize the assignment goals and deliverables.
+- Break task into numbered subtasks with estimated time.
+- Identify required datasets and likely missing pieces.
+- Produce a runnable roadmap and starter R/Quarto files.
+
+After run: append a short `memory/` entry with prompt and summary.
