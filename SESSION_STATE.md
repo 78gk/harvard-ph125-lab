@@ -51,4 +51,9 @@ This file should be updated during the session so Copilot, Antigravity, or any f
 
 - Checkpoint commit: e820fbd
 
+## Remote
+
+- Remote origin: https://github.com/78gk/harvard-ph125-lab
+- Pushed local `master` to remote `main` (branch tracking set to `origin/main`)
+
 
