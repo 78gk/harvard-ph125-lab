@@ -1,3 +1,27 @@
+# R and project files
+.Rhistory
+.RData
+.Rproj.user/
+.Ruserdata
+.Rhistory
+
+# renv library and staging
+renv/library/
+renv/staging/
+
+# OS files
+Thumbs.db
+.DS_Store
+
+# VSCode
+.vscode/
+
+# outputs and figures (keep outputs in repo if desired, but usually ignored)
+outputs/figures/
+
+# personal scripts or secrets
+*.key
+*.env
 /.Rhistory
 /.RData
 /.Renviron

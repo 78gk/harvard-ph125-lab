@@ -16,6 +16,11 @@ Use this file as the lightweight handoff for any IDE or agent that opens the pro
 4. `WORKFLOW.md`
 5. The current assignment folder under `assignments/`
 
+## Current Phase
+
+- Completed: Section 3 and Section 4 (Nearest Neighbors, Bootstrap). Reproducible debugging scripts saved in `scripts/`. Legacy RNG `set.seed(..., sample.kind="Rounding")` logic mapped.
+- Next up: Section 5 (start next session).
+
 ## Operating Rules
 
 - Keep changes inside the repo so context survives between IDEs and models.
