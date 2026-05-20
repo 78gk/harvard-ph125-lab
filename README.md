@@ -53,3 +53,19 @@ Run the scripts (PowerShell):
 ```
 
 Generated figures are saved to `outputs/figures/` by default.
+
+Reproducibility & CI
+
+- This project uses `renv` to snapshot and restore package versions. After installing or updating packages, run from R:
+
+```r
+renv::snapshot()
+```
+
+- Recommended CI: run `renv::restore()` and then execute key scripts (for example, `scripts/section7_answers.R`) to ensure reproducible outputs.
+
+Recommended Git workflow
+
+- Create a short-lived feature branch for changes: `git checkout -b section7-complete`.
+- Commit focused changes and include `renv.lock` if you snapshot dependencies.
+- Push and open a pull request for review before merging to `main`.
